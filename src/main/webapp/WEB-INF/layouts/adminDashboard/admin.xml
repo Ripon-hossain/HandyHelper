@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="adminTemp" 
+                template="/WEB-INF/layouts/adminDashboard/adminTemplate.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="headers" value="/WEB-INF/layouts/adminDashboard/header.jsp" />
+        <put-attribute name="menus" value="/WEB-INF/layouts/adminDashboard/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/adminDashboard/footer.jsp" />
+    </definition>  
+ 
+    <!-- Home Page  -->
+    <definition name="admin_homepage" extends="adminTemp">  
+        <put-attribute name="title" value="home_page" />  
+        <put-attribute name="body" value="/WEB-INF/layouts/adminDashboard/body/dashboard.jsp" />
+         
+    </definition> 
+    <definition name="add_service" extends="adminTemp">  
+        <put-attribute name="title" value="home_page" />  
+        <put-attribute name="body" value="/WEB-INF/layouts/adminDashboard/adding/add_service.jsp" />
+         
+    </definition> 
+    <definition name="add_subService" extends="adminTemp">  
+        <put-attribute name="title" value="home_page" />  
+        <put-attribute name="body" value="/WEB-INF/layouts/adminDashboard/adding/add_subService.jsp" />
+         
+    </definition> 
+    <definition name="add_employee" extends="adminTemp">  
+        <put-attribute name="title" value="home_page" />  
+        <put-attribute name="body" value="/WEB-INF/layouts/employee/add_employee.jsp" />
+         
+    </definition>
+    
+  
+</tiles-definitions> 

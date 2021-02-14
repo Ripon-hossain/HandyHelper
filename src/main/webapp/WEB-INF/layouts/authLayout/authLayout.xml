@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="authLayout" 
+                template="/WEB-INF/layouts/authLayout/authTamplate.jsp">
+        <put-attribute name="title" value="" />  
+        <put-attribute name="authHeader" value="/WEB-INF/layouts/authLayout/authHeader.jsp" />
+        
+        <put-attribute name="authFooter" value="/WEB-INF/layouts/adminDashboard/footer.jsp" />
+    </definition>
+    
+    <definition name="login" extends="authLayout">
+        <put-attribute name="authBody" value="/WEB-INF/layouts/authLayout/login.jsp" />
+    </definition>
+    
+     <definition name="signUp" extends="authLayout">
+        <put-attribute name="" value="" />
+        <put-attribute name="authBody" value="/WEB-INF/layouts/authLayout/signUp.jsp" />
+    </definition>
+    
+    
+</tiles-definitions>
