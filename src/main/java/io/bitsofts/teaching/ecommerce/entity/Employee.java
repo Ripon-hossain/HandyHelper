@@ -5,6 +5,7 @@
  */
 package io.bitsofts.teaching.ecommerce.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -27,7 +28,7 @@ public class Employee {
     String contact;
     String image;
 
-    
+    @JsonIgnore
     Service service;
 
     @Id
